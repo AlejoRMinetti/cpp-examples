@@ -12,7 +12,18 @@ class base {
     virtual ~base()
     { cout<< "Destructing base\n"; }    
 };
- 
+
+/*
+Note: Only Destructors can be Virtual. 
+Constructors cannot be declared as virtual, 
+this is because if you try to override a constructor 
+by declaring it in a base/super class and call it in 
+the derived/sub class with same functionalities it 
+will always give an error as overriding means a feature 
+that lets us to use a method from the parent class in the 
+child class which is not possible. 
+*/
+
 class derived: public base {
   public:
     derived()    
