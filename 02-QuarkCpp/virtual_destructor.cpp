@@ -1,5 +1,6 @@
 // CPP program without virtual destructor
 // causing undefined behavior
+// https://www.geeksforgeeks.org/virtual-destructor/
 #include <iostream>
  
 using namespace std;
